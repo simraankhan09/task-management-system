@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: task-management-system
+  datasource:
+    url: jdbc:mysql://${env.DATABASE_HOSTNAME}:${env.DATABASE_PORT}/${env.DATABASE_NAME}
+    username: ${env.DATABASE_USER}
+    password: ${env.DATABASE_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
